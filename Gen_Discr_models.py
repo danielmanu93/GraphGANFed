@@ -1,4 +1,4 @@
-#####Generator & Discriminator implementation based on MolGAN####  
+#####Generator & Discriminator implementation based on MolGAN architecture####  
 
 
 import torch
