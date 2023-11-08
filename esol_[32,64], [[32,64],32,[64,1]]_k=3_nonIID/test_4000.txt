@@ -1,0 +1,115 @@
+Namespace(z_dim=16, g_conv_dim=[32, 64], d_conv_dim=[[32, 64], 32, [64, 1]], g_repeat_num=6, d_repeat_num=6, lambda_cls=1, lambda_rec=10, lambda_gp=10, post_method='softmax', batch_size=16, num_iters_local=5000, num_iters_decay=10, g_lr=0.0001, d_lr=0.0001, dropout=0.0, n_critic=5, beta1=0.5, beta2=0.999, resume_iters=None, epochs_global=50, num_users=3, frac=1, test_iters=4000, num_workers=1, mode='test', use_tensorboard=False, data_iid=0, mol_data_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan\\data_smiles\\esol.dataset', log_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan6\\logs', model_save_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan6\\models', sample_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan6\\samples', result_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan6\\results', log_step=10, sample_step=1000, model_save_step=1000, lr_update_step=1000)
+2023-10-20 11:52:54 Extracting C:\Users\danie\OneDrive\Desktop\fedgan\data_smiles\esol_smiles.pkl..
+2023-10-20 11:52:54 Extracted 1128 out of 1 molecules not adding Hydrogen!
+2023-10-20 11:52:54 Creating atoms encoder and decoder..
+2023-10-20 11:52:54 Created atoms encoder and decoder with 10 atom types and 1 PAD symbol!
+2023-10-20 11:52:54 Creating bonds encoder and decoder..
+2023-10-20 11:52:54 Created bonds encoder and decoder with 4 bond types and 1 PAD symbol!
+2023-10-20 11:52:54 Creating SMILES encoder and decoder..
+2023-10-20 11:52:54 Created SMILES encoder and decoder with 32 types and 1 PAD symbol!
+2023-10-20 11:52:54 Creating features and adjacency matrices..
+
+2023-10-20 11:53:00 Created 1127 features and adjacency matrices  out of 1128 molecules!
+[ 0  6  7  8  9 15 16 17 35 53]
+Loading the trained models from step 4000...
+Elapsed [], Iteration [4010/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0215, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4020/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0197, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4030/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0197, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4040/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0212, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4050/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0197, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4060/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0168, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4070/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0190, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4080/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0187, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4090/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0178, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4100/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0162, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4110/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0190, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4120/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0149, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4130/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0195, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4140/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0190, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4150/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0159, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4160/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0172, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4170/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0164, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4180/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0154, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4190/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0159, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4200/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0174, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4210/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0190, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4220/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0165, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4230/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0166, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4240/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0172, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4250/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0212, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4260/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0183, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4270/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0200, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4280/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0160, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4290/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0199, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4300/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0194, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4310/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0180, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4320/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0159, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4330/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0169, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4340/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0171, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4350/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0180, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4360/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0189, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4370/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0153, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4380/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0167, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4390/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0187, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4400/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0191, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4410/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0179, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4420/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0147, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4430/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0145, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4440/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0173, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4450/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0160, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4460/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0187, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4470/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0208, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4480/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0211, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4490/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0191, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4500/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0177, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4510/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0163, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4520/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0174, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4530/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0179, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4540/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0189, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:00], Iteration [4550/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0189, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4560/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0153, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4570/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0199, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4580/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0154, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4590/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0158, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4600/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0177, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4610/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0164, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4620/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0185, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4630/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0161, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4640/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0150, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4650/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0205, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4660/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0170, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4670/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0193, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4680/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0182, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4690/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0181, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4700/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0145, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4710/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0168, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4720/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0176, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4730/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0163, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4740/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0184, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4750/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0194, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4760/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0184, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4770/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0131, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4780/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0160, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4790/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0149, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4800/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0172, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4810/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0172, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4820/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0193, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4830/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0227, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4840/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0238, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4850/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0175, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4860/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0207, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4870/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0175, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4880/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0170, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4890/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0198, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4900/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0182, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4910/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0179, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4920/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0165, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4930/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0174, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4940/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0158, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4950/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0162, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4960/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0159, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4970/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0142, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4980/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0201, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [4990/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0160, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [5000/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0167, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
+Elapsed [0:00:01], Iteration [5010/5010], QED score: 0.1130, logP score: 1.0000, diversity score: 1.0000, similarity_scores: 0.0169, valid score: 0.8929, unique score: 100.0000, novel score: 100.0000
