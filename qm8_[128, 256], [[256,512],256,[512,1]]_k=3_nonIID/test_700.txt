@@ -1,0 +1,45 @@
+Namespace(z_dim=16, g_conv_dim=[128, 256], d_conv_dim=[[256, 512], 256, [512, 1]], g_repeat_num=6, d_repeat_num=6, lambda_cls=1, lambda_rec=10, lambda_gp=10, post_method='softmax', batch_size=16, num_iters_local=1000, num_iters_decay=10, g_lr=0.0001, d_lr=0.0001, dropout=0.0, n_critic=5, beta1=0.5, beta2=0.999, resume_iters=None, epochs_global=50, num_users=3, frac=1, test_iters=700, num_workers=1, mode='test', use_tensorboard=False, data_iid=0, mol_data_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan\\data_smiles\\qm8.dataset', log_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan4\\logs', model_save_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan4\\models', sample_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan4\\samples', result_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan4\\results', log_step=10, sample_step=100, model_save_step=100, lr_update_step=100)
+2023-10-23 12:26:46 Extracting C:\Users\danie\OneDrive\Desktop\fedgan\data_smiles\qm8_smiles.pkl..
+2023-10-23 12:26:48 Extracted 21786 out of 1 molecules not adding Hydrogen!
+2023-10-23 12:26:48 Creating atoms encoder and decoder..
+2023-10-23 12:26:49 Created atoms encoder and decoder with 5 atom types and 1 PAD symbol!
+2023-10-23 12:26:49 Creating bonds encoder and decoder..
+2023-10-23 12:26:50 Created bonds encoder and decoder with 4 bond types and 1 PAD symbol!
+2023-10-23 12:26:50 Creating SMILES encoder and decoder..
+2023-10-23 12:26:51 Created SMILES encoder and decoder with 21 types and 1 PAD symbol!
+2023-10-23 12:26:51 Creating features and adjacency matrices..
+
+2023-10-23 12:27:15 Created 21783 features and adjacency matrices  out of 21786 molecules!
+[0 6 7 8 9]
+Loading the trained models from step 700...
+Elapsed [], Iteration [710/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9949, similarity_scores: 0.0097, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:00], Iteration [720/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9959, similarity_scores: 0.0071, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:01], Iteration [730/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9982, similarity_scores: 0.0071, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:02], Iteration [740/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9987, similarity_scores: 0.0087, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:02], Iteration [750/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9971, similarity_scores: 0.0059, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:03], Iteration [760/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9986, similarity_scores: 0.0095, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:04], Iteration [770/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9976, similarity_scores: 0.0077, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:05], Iteration [780/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9981, similarity_scores: 0.0049, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:05], Iteration [790/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9982, similarity_scores: 0.0078, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:06], Iteration [800/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9972, similarity_scores: 0.0094, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:07], Iteration [810/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9983, similarity_scores: 0.0081, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:07], Iteration [820/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9976, similarity_scores: 0.0112, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:08], Iteration [830/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9966, similarity_scores: 0.0087, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:09], Iteration [840/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9974, similarity_scores: 0.0060, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:09], Iteration [850/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9989, similarity_scores: 0.0066, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:10], Iteration [860/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9987, similarity_scores: 0.0050, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:11], Iteration [870/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9981, similarity_scores: 0.0056, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:12], Iteration [880/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9975, similarity_scores: 0.0069, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:12], Iteration [890/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9972, similarity_scores: 0.0078, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:13], Iteration [900/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9942, similarity_scores: 0.0077, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:14], Iteration [910/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9980, similarity_scores: 0.0086, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:14], Iteration [920/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9964, similarity_scores: 0.0055, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:15], Iteration [930/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9985, similarity_scores: 0.0099, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:16], Iteration [940/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9978, similarity_scores: 0.0072, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:16], Iteration [950/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9978, similarity_scores: 0.0072, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:17], Iteration [960/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9980, similarity_scores: 0.0111, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:18], Iteration [970/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9985, similarity_scores: 0.0085, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:18], Iteration [980/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9984, similarity_scores: 0.0086, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:19], Iteration [990/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9957, similarity_scores: 0.0117, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:20], Iteration [1000/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9969, similarity_scores: 0.0088, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
+Elapsed [0:00:20], Iteration [1010/1010], QED score: 0.4563, logP score: 0.6353, diversity score: 0.9991, similarity_scores: 0.0059, valid score: 19.8347, unique score: 65.5093, novel score: 100.0000
