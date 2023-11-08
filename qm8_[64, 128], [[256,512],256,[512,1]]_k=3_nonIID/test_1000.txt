@@ -1,0 +1,15 @@
+Namespace(z_dim=16, g_conv_dim=[64, 128], d_conv_dim=[[256, 512], 256, [512, 1]], g_repeat_num=6, d_repeat_num=6, lambda_cls=1, lambda_rec=10, lambda_gp=10, post_method='softmax', batch_size=16, num_iters_local=1000, num_iters_decay=10, g_lr=0.0001, d_lr=0.0001, dropout=0.0, n_critic=5, beta1=0.5, beta2=0.999, resume_iters=None, epochs_global=50, num_users=3, frac=1, test_iters=1000, num_workers=1, mode='test', use_tensorboard=False, data_iid=0, mol_data_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan\\data_smiles\\qm8.dataset', log_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan5\\logs', model_save_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan5\\models', sample_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan5\\samples', result_dir='C:\\Users\\danie\\OneDrive\\Desktop\\fedgan5\\results', log_step=10, sample_step=100, model_save_step=100, lr_update_step=100)
+2023-10-23 12:17:05 Extracting C:\Users\danie\OneDrive\Desktop\fedgan\data_smiles\qm8_smiles.pkl..
+2023-10-23 12:17:08 Extracted 21786 out of 1 molecules not adding Hydrogen!
+2023-10-23 12:17:08 Creating atoms encoder and decoder..
+2023-10-23 12:17:09 Created atoms encoder and decoder with 5 atom types and 1 PAD symbol!
+2023-10-23 12:17:09 Creating bonds encoder and decoder..
+2023-10-23 12:17:10 Created bonds encoder and decoder with 4 bond types and 1 PAD symbol!
+2023-10-23 12:17:10 Creating SMILES encoder and decoder..
+2023-10-23 12:17:11 Created SMILES encoder and decoder with 21 types and 1 PAD symbol!
+2023-10-23 12:17:11 Creating features and adjacency matrices..
+
+2023-10-23 12:17:35 Created 21783 features and adjacency matrices  out of 21786 molecules!
+[0 6 7 8 9]
+Loading the trained models from step 1000...
+Elapsed [], Iteration [1010/1010], QED score: 0.4258, logP score: 0.5010, diversity score: 0.9951, similarity_scores: 0.0428, valid score: 0.4591, unique score: 100.0000, novel score: 100.0000
