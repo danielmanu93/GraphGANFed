@@ -1,0 +1,15 @@
+Namespace(batch_size=16, beta1=0.5, beta2=0.999, d_conv_dim=[[32, 64], 32, [64, 1]], d_lr=0.0001, d_repeat_num=6, data_iid=0, dropout=0.0, epochs_global=50, frac=1, g_conv_dim=[64, 128], g_lr=0.0001, g_repeat_num=6, lambda_cls=1, lambda_gp=10, lambda_rec=10, log_dir='C:\\Users\\DANIEL\\Desktop\\fedgan5\\logs', log_step=10, lr_update_step=1000, mode='test', model_save_dir='C:\\Users\\DANIEL\\Desktop\\fedgan5\\models', model_save_step=1000, mol_data_dir='C:\\Users\\DANIEL\\Desktop\\fedgan\\data_smiles\\esol.dataset', n_critic=5, num_iters_decay=10, num_iters_local=5000, num_users=3, num_workers=1, post_method='softmax', result_dir='C:\\Users\\DANIEL\\Desktop\\fedgan5\\results', resume_iters=None, sample_dir='C:\\Users\\DANIEL\\Desktop\\fedgan5\\samples', sample_step=1000, test_iters=5000, use_tensorboard=False, z_dim=16)
+2023-10-22 20:04:04 Extracting C:\Users\DANIEL\Desktop\fedgan\data_smiles\esol_smiles.pkl..
+2023-10-22 20:04:04 Extracted 1128 out of 1 molecules not adding Hydrogen!
+2023-10-22 20:04:04 Creating atoms encoder and decoder..
+2023-10-22 20:04:04 Created atoms encoder and decoder with 10 atom types and 1 PAD symbol!
+2023-10-22 20:04:04 Creating bonds encoder and decoder..
+2023-10-22 20:04:04 Created bonds encoder and decoder with 4 bond types and 1 PAD symbol!
+2023-10-22 20:04:04 Creating SMILES encoder and decoder..
+2023-10-22 20:04:04 Created SMILES encoder and decoder with 32 types and 1 PAD symbol!
+2023-10-22 20:04:04 Creating features and adjacency matrices..
+
+2023-10-22 20:04:07 Created 1127 features and adjacency matrices  out of 1128 molecules!
+[ 0  6  7  8  9 15 16 17 35 53]
+Loading the trained models from step 5000...
+Elapsed [0:00:00], Iteration [5010/5010], QED score: 0.4001, logP score: 0.8988, diversity score: 1.0000, similarity_scores: 0.0019, valid score: 58.9286, unique score: 100.0000, novel score: 100.0000
